@@ -1,6 +1,6 @@
-package br.com.alura.challenge_form_hub.domain.usuario;
+package com.aluraone.forumHub.domain.usuario;
 
-import br.com.alura.challenge_form_hub.domain.topico.Topico;
+import com.aluraone.forumHub.domain.topico.Topico;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -24,50 +24,49 @@ import java.util.List;
 
 public class Usuario implements UserDetails {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String nome;
-    private String email;
-    private String senha;
-    private boolean status;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
+  private String nome;
+  private String email;
+  private String senha;
+  private boolean status;
 
-    @OneToMany(mappedBy = "autor")
-    private List<Topico> topicos = new ArrayList<>();
+  @OneToMany(mappedBy = "autor")
+  private List<Topico> topicos = new ArrayList<>();
 
-    @Override
-    public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of(new SimpleGrantedAuthority("ROLE_USER"));
-    }
+  @Override
+  public Collection<? extends GrantedAuthority> getAuthorities() {
+  return List.of(new SimpleGrantedAuthority("ROLE_USER"));
+  }
 
-    @Override
-    public String getPassword() {
-        return senha;
-    }
+  @Override
+  public String getPassword() {
+    return senha;
+  }
 
-    @Override
-    public String getUsername() {
-        return email;
-    }
+  @Override
+  public String getUsername() {
+    return email;
+  }
 
-    @Override
-    public boolean isAccountNonExpired() {
-        return UserDetails.super.isAccountNonExpired();
-    }
+  @Override
+  public boolean isAccountNonExpired() {
+    return UserDetails.super.isAccountNonExpired();
+  }
 
-    @Override
-    public boolean isAccountNonLocked() {
-        return UserDetails.super.isAccountNonLocked();
-    }
+  @Override
+  public boolean isAccountNonLocked() {
+    return UserDetails.super.isAccountNonLocked();
+  }
 
-    @Override
-    public boolean isCredentialsNonExpired() {
-        return UserDetails.super.isCredentialsNonExpired();
-    }
+  @Override
+  public boolean isCredentialsNonExpired() {
+    return UserDetails.super.isCredentialsNonExpired();
+  }
 
-    @Override
-    public boolean isEnabled() {
-        return UserDetails.super.isEnabled();
-    }
+  @Override
+  public boolean isEnabled() {
+    return UserDetails.super.isEnabled();
+  }
 }
-
