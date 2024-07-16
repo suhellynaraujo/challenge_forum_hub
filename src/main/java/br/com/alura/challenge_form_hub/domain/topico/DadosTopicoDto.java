@@ -1,7 +1,8 @@
-package br.com.alura.challenge_form_hub.domain.topico;
+package com.aluraone.forumHub.domain.topico;
 
-import br.com.alura.challenge_form_hub.domain.curso.DadosListagemCursoDto;
+import com.aluraone.forumHub.domain.curso.DadosListagemCursoDto;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public record DadosTopicoDto(
 
@@ -10,4 +11,3 @@ public record DadosTopicoDto(
         @NotBlank(message = "Campo mensagem é obrigatorio")
         String mensagem,
         DadosListagemCursoDto curso){}
-

@@ -1,6 +1,6 @@
-package br.com.alura.challenge_form_hub.domain.topico;
+package com.aluraone.forumHub.domain.topico;
 
-import br.com.alura.challenge_form_hub.domain.curso.DadosListagemCursoDto;
+import com.aluraone.forumHub.domain.curso.DadosListagemCursoDto;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
@@ -12,4 +12,3 @@ public record DadosCadastroTopicoDto(
         String mensagem,
         @NotNull(message = "Campo id del curso é obrigatorio") DadosListagemCursoDto curso) {
 }
-
