@@ -1,4 +1,7 @@
-package br.com.alura.challenge_form_hub.domain.usuario;
+package com.aluraone.forumHub.domain.usuario;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 
 public record DadosResUsuarioDto(
         Long id,
@@ -17,3 +20,6 @@ public record DadosResUsuarioDto(
 
 
 }
+
+
+
