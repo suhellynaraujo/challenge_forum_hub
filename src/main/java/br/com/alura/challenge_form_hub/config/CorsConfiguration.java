@@ -1,8 +1,8 @@
-package br.com.alura.challenge_form_hub.config;
+package com.aluraone.forumHub.config;
 
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 
 @Configuration
 public class CorsConfiguration implements WebMvcConfigurer {
