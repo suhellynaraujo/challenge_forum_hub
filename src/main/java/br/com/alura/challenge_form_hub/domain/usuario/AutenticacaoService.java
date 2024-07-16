@@ -1,4 +1,4 @@
-package br.com.alura.challenge_form_hub.domain.usuarios;
+package br.com.alura.challenge_form_hub.domain.usuario;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;

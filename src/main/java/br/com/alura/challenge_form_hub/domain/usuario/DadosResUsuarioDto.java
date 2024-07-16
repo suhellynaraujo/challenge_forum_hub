@@ -1,4 +1,4 @@
-package br.com.alura.challenge_form_hub.domain.usuarios;
+package br.com.alura.challenge_form_hub.domain.usuario;
 
 public record DadosResUsuarioDto(
         Long id,

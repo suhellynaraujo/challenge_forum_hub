@@ -1,8 +1,7 @@
-package br.com.alura.challenge_form_hub.topico;
+package br.com.alura.challenge_form_hub.domain.topico;
 
-import br.com.alura.challenge_form_hub.curso.DadosListagemCursoDto;
+import br.com.alura.challenge_form_hub.domain.curso.DadosListagemCursoDto;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
 public record DadosTopicoDto(
 

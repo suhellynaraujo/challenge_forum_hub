@@ -1,4 +1,4 @@
-package br.com.alura.challenge_form_hub.curso;
+package br.com.alura.challenge_form_hub.domain.curso;
 
 import jakarta.validation.constraints.NotBlank;
 public record DadosCursoDto(

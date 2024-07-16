@@ -1,6 +1,6 @@
-package br.com.alura.challenge_form_hub.topico;
-import br.com.alura.challenge_form_hub.curso.DadosListagemCursoDto;
-import br.com.alura.challenge_form_hub.domain.usuarios.DadosUsuarioDto;
+package br.com.alura.challenge_form_hub.domain.topico;
+import br.com.alura.challenge_form_hub.domain.curso.DadosListagemCursoDto;
+import br.com.alura.challenge_form_hub.domain.usuario.DadosUsuarioDto;
 
 import java.time.LocalDateTime;
 

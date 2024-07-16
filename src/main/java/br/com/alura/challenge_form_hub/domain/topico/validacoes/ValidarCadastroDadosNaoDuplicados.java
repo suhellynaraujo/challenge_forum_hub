@@ -1,7 +1,7 @@
-package br.com.alura.challenge_form_hub.topico.validacoes;
+package br.com.alura.challenge_form_hub.domain.topico.validacoes;
 
-import br.com.alura.challenge_form_hub.domain.usuarios.ValidacaoException;
-import br.com.alura.challenge_form_hub.topico.TopicoRepository;
+import br.com.alura.challenge_form_hub.domain.ValidacaoException;
+import br.com.alura.challenge_form_hub.domain.topico.TopicoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
