@@ -1,6 +1,6 @@
-package br.com.alura.challenge_form_hub.curso;
+package br.com.alura.challenge_form_hub.domain.curso;
 
-import br.com.alura.challenge_form_hub.topico.Topico;
+import br.com.alura.challenge_form_hub.domain.topico.Topico;
 import jakarta.persistence.*;
 import lombok.*;
 

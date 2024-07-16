@@ -1,4 +1,4 @@
-package br.com.alura.challenge_form_hub.curso;
+package br.com.alura.challenge_form_hub.domain.curso;
 
 public record DadosListagemCursoDto( Long id,
                                      String nome,

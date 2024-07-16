@@ -1,7 +1,7 @@
-package br.com.alura.challenge_form_hub.topico;
+package br.com.alura.challenge_form_hub.domain.topico;
 
-import br.com.alura.challenge_form_hub.curso.Curso;
-import br.com.alura.challenge_form_hub.domain.usuarios.Usuario;
+import br.com.alura.challenge_form_hub.domain.usuario.Usuario;
+import br.com.alura.challenge_form_hub.domain.curso.Curso;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
