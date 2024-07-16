@@ -1,4 +1,4 @@
-package br.com.alura.challenge_form_hub.domain;
+package com.aluraone.forumHub.domain;
 
 public class ValidacaoException extends RuntimeException{
     public ValidacaoException(String message){
