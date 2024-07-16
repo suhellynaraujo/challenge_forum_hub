@@ -1,8 +1,11 @@
-package br.com.alura.challenge_form_hub.domain.curso;
+package com.aluraone.forumHub.domain.curso;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public record DadosListagemCursoDto( Long id,
-                                     String nome,
-                                     boolean status) {
+                                    String nome,
+                                    boolean status) {
 
     //constructor para mostrar o DTO a partir de un objeto entidad
     public DadosListagemCursoDto(Curso curso){
@@ -12,3 +15,6 @@ public record DadosListagemCursoDto( Long id,
 
 
 }
+
+
+
