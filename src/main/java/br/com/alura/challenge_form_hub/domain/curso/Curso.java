@@ -1,6 +1,6 @@
-package com.aluraone.forumHub.domain.curso;
+package br.com.alura.challenge_form_hub.domain.curso;
 
-import com.aluraone.forumHub.domain.topico.Topico;
+import br.com.alura.challenge_form_hub.domain.topico.Topico;
 import jakarta.persistence.*;
 import lombok.*;
 

@@ -1,7 +1,7 @@
-package com.aluraone.forumHub.service;
+package br.com.alura.challenge_form_hub.service;
 
-import com.aluraone.forumHub.domain.usuario.Usuario;
-import com.aluraone.forumHub.domain.usuario.UsuarioRepository;
+import br.com.alura.challenge_form_hub.domain.usuario.Usuario;
+import br.com.alura.challenge_form_hub.domain.usuario.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

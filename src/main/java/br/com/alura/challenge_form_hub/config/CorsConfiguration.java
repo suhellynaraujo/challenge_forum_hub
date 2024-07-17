@@ -1,4 +1,4 @@
-package com.aluraone.forumHub.config;
+package br.com.alura.challenge_form_hub.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;

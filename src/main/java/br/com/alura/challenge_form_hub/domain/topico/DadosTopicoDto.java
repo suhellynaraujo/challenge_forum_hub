@@ -1,6 +1,6 @@
-package com.aluraone.forumHub.domain.topico;
+package br.com.alura.challenge_form_hub.domain.topico;
 
-import com.aluraone.forumHub.domain.curso.DadosListagemCursoDto;
+import br.com.alura.challenge_form_hub.domain.curso.DadosListagemCursoDto;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 

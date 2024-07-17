@@ -1,5 +1,6 @@
-package com.aluraone.forumHub.domain.topico;
+package br.com.alura.challenge_form_hub.domain.topico;
 
+import br.com.alura.challenge_form_hub.domain.topico.Topico;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

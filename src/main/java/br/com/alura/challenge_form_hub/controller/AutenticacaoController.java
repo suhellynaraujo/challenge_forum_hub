@@ -1,9 +1,9 @@
-package com.aluraone.forumHub.controller;
+package br.com.alura.challenge_form_hub.controller;
 
-import com.aluraone.forumHub.domain.usuario.DadosAutenticacaoDto;
-import com.aluraone.forumHub.domain.usuario.Usuario;
+import br.com.alura.challenge_form_hub.domain.usuario.DadosAutenticacaoDto;
+import br.com.alura.challenge_form_hub.domain.usuario.Usuario;
+import br.com.alura.challenge_form_hub.infra.security.TokenService;
 import com.aluraone.forumHub.infra.security.DadosTokenJWT;
-import com.aluraone.forumHub.infra.security.TokenService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

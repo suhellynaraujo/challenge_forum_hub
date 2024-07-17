@@ -1,8 +1,8 @@
-package com.aluraone.forumHub.controller;
+package br.com.alura.challenge_form_hub.controller;
 
-import com.aluraone.forumHub.domain.curso.DadosCursoDto;
-import com.aluraone.forumHub.domain.curso.DadosListagemCursoDto;
-import com.aluraone.forumHub.service.CursoService;
+import br.com.alura.challenge_form_hub.domain.curso.DadosCursoDto;
+import br.com.alura.challenge_form_hub.domain.curso.DadosListagemCursoDto;
+import br.com.alura.challenge_form_hub.service.CursoService;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

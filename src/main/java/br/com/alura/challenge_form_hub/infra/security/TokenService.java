@@ -1,6 +1,6 @@
-package com.aluraone.forumHub.infra.security;
+package br.com.alura.challenge_form_hub.infra.security;
 
-import com.aluraone.forumHub.domain.usuario.Usuario;
+import br.com.alura.challenge_form_hub.domain.usuario.Usuario;
 import com.aluraone.forumHub.infra.exceptions.AuthorizationException;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
@@ -58,4 +58,6 @@ public class TokenService {
     private Instant dataExpiracao() {
         return LocalDateTime.now().plusHours(2).toInstant(ZoneOffset.of("-03:00"));
     }
+
+
 }

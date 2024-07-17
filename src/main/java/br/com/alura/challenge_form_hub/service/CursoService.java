@@ -1,10 +1,9 @@
-package com.aluraone.forumHub.service;
+package br.com.alura.challenge_form_hub.service;
 
-import com.aluraone.forumHub.domain.curso.Curso;
-import com.aluraone.forumHub.domain.curso.CursoRepository;
-import com.aluraone.forumHub.domain.curso.DadosCursoDto;
-import com.aluraone.forumHub.domain.curso.DadosListagemCursoDto;
-import com.aluraone.forumHub.domain.topico.Topico;
+import br.com.alura.challenge_form_hub.domain.curso.Curso;
+import br.com.alura.challenge_form_hub.domain.curso.CursoRepository;
+import br.com.alura.challenge_form_hub.domain.curso.DadosCursoDto;
+import br.com.alura.challenge_form_hub.domain.curso.DadosListagemCursoDto;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

@@ -1,7 +1,7 @@
-package com.aluraone.forumHub.domain.topico;
+package br.com.alura.challenge_form_hub.domain.topico;
 
-import com.aluraone.forumHub.domain.curso.DadosListagemCursoDto;
-import com.aluraone.forumHub.domain.usuario.DadosUsuarioDto;
+import br.com.alura.challenge_form_hub.domain.curso.DadosListagemCursoDto;
+import br.com.alura.challenge_form_hub.domain.usuario.DadosUsuarioDto;
 
 import java.time.LocalDateTime;
 
@@ -16,7 +16,7 @@ public record DadosListagemTopicoDto(
 ){
 
 
-    public DadosListagemTopicoDto(Topico topico){
+    public DadosListagemTopicoDto(br.com.alura.challenge_form_hub.domain.topico.Topico topico){
         this(topico.getId(), topico.getTitulo(), topico.getMensagem(), topico.getDataCriacao(), topico.isStatus(),
                  new DadosListagemCursoDto(topico.getCurso()), new DadosUsuarioDto(topico.getAutor())
                 );

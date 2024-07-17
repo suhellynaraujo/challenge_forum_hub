@@ -1,6 +1,6 @@
-package com.aluraone.forumHub.domain.usuario;
+package br.com.alura.challenge_form_hub.domain.usuario;
 
-import com.aluraone.forumHub.domain.topico.Topico;
+import br.com.alura.challenge_form_hub.domain.topico.Topico;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

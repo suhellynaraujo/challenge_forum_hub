@@ -1,7 +1,10 @@
-package com.aluraone.forumHub.controller;
+package br.com.alura.challenge_form_hub.controller;
 
-import com.aluraone.forumHub.domain.topico.*;
-import com.aluraone.forumHub.service.TopicoService;
+import br.com.alura.challenge_form_hub.domain.topico.DadosCadastroTopicoDto;
+import br.com.alura.challenge_form_hub.domain.topico.DadosListagemTopicoDto;
+import br.com.alura.challenge_form_hub.domain.topico.DadosTopicoDto;
+import br.com.alura.challenge_form_hub.domain.topico.TopicoRepository;
+import br.com.alura.challenge_form_hub.service.TopicoService;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,7 +31,7 @@ public class TopicoController {
     @PostMapping
     @Transactional
     @SecurityRequirement(name = "bearer-key")
-    public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroTopicoDto topicoDto, UriComponentsBuilder uriBuilder,  Authentication authentication){
+    public ResponseEntity cadastrar(@RequestBody @Valid DadosCadastroTopicoDto topicoDto, UriComponentsBuilder uriBuilder, Authentication authentication){
 
         String emailUsuarioLoggeado = authentication.getName();
         Long topicoId =  topicoService.cadastrarTopico(topicoDto, emailUsuarioLoggeado);
